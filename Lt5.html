@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic Metadata -->
+    <title>Academic Profile - Firoj Koraishi Sourov</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Personal academic profile page using semantic HTML5">
+    <meta name="keywords" content="HTML5, Academic Profile, Student, CSE">
+    <meta name="author" content="Firoj Koraishi Sourov">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Firoj Koraishi Sourov</h1>
+
+        <!-- Navigation -->
+        <nav>
+            <a href="#bio">Biography</a> |
+            <a href="#education">Education</a> |
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Biography Section -->
+        <section id="bio">
+            <h2>Biography</h2>
+            <p>
+                I am a student of <strong>Computer Science and Engineering</strong>.
+                I am interested in software development and learning modern web technologies.
+                This page represents my academic profile using semantic HTML5.
+            </p>
+        </section>
+
+        <hr>
+
+        <!-- Education Section -->
+        <section id="education">
+            <h2>Education</h2>
+
+            <table border="1">
+                <caption>Educational Background</caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">Degree</th>
+                        <th scope="col">Institution</th>
+                        <th scope="col">Year</th>
+                        <th scope="col">Result</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>BSc in CSE</td>
+                        <td>American International University-Bangladesh</td>
+                        <td>2026</td>
+                        <td>3.84 CGPA</td>
+                    </tr>
+
+                    <tr>
+                        <td>HSC</td>
+                        <td>Govt. Shah Sultan College, Bogura</td>
+                        <td>2021</td>
+                        <td>5.00 GPA</td>
+                    </tr>
+
+                    <tr>
+                        <td>SSC</td>
+                        <td>Bhalshon High School, Bogura</td>
+                        <td>2019</td>
+                        <td>5.00 GPA</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+        <!-- Contact Form Section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+
+            <form action="#" method="post">
+
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                <br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <br><br>
+
+                <label for="phone">Phone:</label><br>
+                <input type="tel" id="phone" name="phone"
+                       placeholder="01XXXXXXXXX"
+                       pattern="01[0-9]{9}"
+                       maxlength="11">
+                <br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message"
+                          placeholder="Write your message here"
+                          rows="4" cols="30"
+                          required></textarea>
+                <br><br>
+
+                <input type="submit" value="Send">
+                <input type="reset" value="Reset">
+
+            </form>
+        </section>
+
+    </main>
+
+    <hr>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Contact: firojkoraishisourov@gmail.com</p>
+        <p>&copy; Firoj Koraishi Sourov</p>
+    </footer>
+
+</body>
+</html>

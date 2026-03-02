@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab Task 01 - JavaScript Basics</title>
+</head>
+<body>
+
+    <h1>JavaScript Basics and User Interaction</h1>
+    <hr>
+
+    <h2>Output Section</h2>
+    <div id="output"></div>
+
+    <script>
+
+        alert("Welcome to JavaScript Lab Task 01!");
+
+        console.log("JavaScript is working successfully!");
+
+        document.write("<p>This message is written using document.write()</p>");
+
+
+        var studentName = "Firoj Koraishi Sourov";
+        var studentAge = 22;
+
+        var nextYearAge = studentAge + 1; 
+        var message = "Student Name: " + studentName; 
+
+        document.write("<p>" + message + "</p>");
+        document.write("<p>Current Age: " + studentAge + "</p>");
+        document.write("<p>Next Year Age: " + nextYearAge + "</p>");
+
+
+
+        var num1 = prompt("Enter first number:");
+        var num2 = prompt("Enter second number:");
+
+        num1 = Number(num1);
+        num2 = Number(num2);
+
+        var sum = num1 + num2;
+        var difference = num1 - num2;
+        var product = num1 * num2;
+
+        document.write("<h2>Calculation Results</h2>");
+        document.write("<p>Sum: " + sum + "</p>");
+        document.write("<p>Difference: " + difference + "</p>");
+        document.write("<p>Product: " + product + "</p>");
+
+
+
+        var checkNumber = prompt("Enter a number to check Even or Odd:");
+        checkNumber = parseInt(checkNumber);
+
+        if (checkNumber % 2 === 0) {
+            document.write("<p>The number " + checkNumber + " is Even.</p>");
+        } else {
+            document.write("<p>The number " + checkNumber + " is Odd.</p>");
+        }
+
+    </script>
+
+</body>
+</html>

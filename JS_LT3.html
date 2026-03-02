@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab Task 03 - Arrays and Objects</title>
+</head>
+<body>
+
+    <h1>JavaScript Arrays and Objects</h1>
+    <hr>
+
+    <script>
+
+        document.write("<h2>Part A: Course Array</h2>");
+
+        var courses = ["Web Technologies", "Data Structures", "Algorithms", "Database Systems", "Operating Systems"];
+
+        document.write("<p>Original Course List:</p>");
+
+        for (var i = 0; i < courses.length; i++) {
+            document.write(courses[i] + "<br>");
+        }
+
+        courses.push("Artificial Intelligence");
+
+        document.write("<br><p>After Adding New Course:</p>");
+
+        for (var i = 0; i < courses.length; i++) {
+            document.write(courses[i] + "<br>");
+        }
+
+
+        document.write("<h2>Part B: Array Operations</h2>");
+
+        document.write("<p>Array Length: " + courses.length + "</p>");
+
+        courses.pop();
+
+        courses.unshift("Computer Networks");
+
+        document.write("<p>Final Course List:</p>");
+
+        for (var i = 0; i < courses.length; i++) {
+            document.write(courses[i] + "<br>");
+        }
+
+
+
+        document.write("<h2>Part C: Student Object</h2>");
+
+        var student = {
+            name: "Firoj Koraishi Sourov",
+            id: "23-53516-3",
+            department: "CSE",
+            cgpa: 3.84
+        };
+
+        document.write("<p>Name: " + student.name + "</p>");
+        document.write("<p>ID: " + student.id + "</p>");
+        document.write("<p>Department: " + student.department + "</p>");
+        document.write("<p>CGPA: " + student.cgpa + "</p>");
+
+
+
+        document.write("<h2>Part D: Array of Student Objects</h2>");
+
+        var students = [
+            { name: "Rahim", id: "22-11111-1", department: "CSE", cgpa: 3.75 },
+            { name: "Karim", id: "22-22222-1", department: "EEE", cgpa: 3.60 },
+            { name: "Sumaiya", id: "22-33333-1", department: "BBA", cgpa: 3.90 }
+        ];
+
+        for (var i = 0; i < students.length; i++) {
+            document.write("<p>");
+            document.write("Name: " + students[i].name + "<br>");
+            document.write("ID: " + students[i].id + "<br>");
+            document.write("Department: " + students[i].department + "<br>");
+            document.write("CGPA: " + students[i].cgpa);
+            document.write("</p><hr>");
+        }
+
+    </script>
+
+</body>
+</html>

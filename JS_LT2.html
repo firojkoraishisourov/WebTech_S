@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab Task 02 - Functions, Loops, and Strings</title>
+</head>
+<body>
+
+    <h1>JavaScript Functions, Loops, and String Operations</h1>
+    <hr>
+
+    <script>
+
+
+        function calculateSum(num1, num2) {
+            return num1 + num2;
+        }
+
+        var result = calculateSum(10, 20);
+        document.write("<h2>Part A: Function Result</h2>");
+        document.write("<p>Sum of 10 and 20 is: " + result + "</p>");
+
+
+        document.write("<h2>Part B: Loops</h2>");
+
+        document.write("<p>Numbers from 1 to 10 (For Loop):</p>");
+        for (var i = 1; i <= 10; i++) {
+            document.write(i + " ");
+        }
+
+        document.write("<br><br>");
+
+        document.write("<p>Even numbers from 1 to 20 (While Loop):</p>");
+        var num = 1;
+        while (num <= 20) {
+            if (num % 2 === 0) {
+                document.write(num + " ");
+            }
+            num++;
+        }
+
+
+        document.write("<h2>Part C: String Operations</h2>");
+
+        var fullName = "Firoj Koraishi Sourov";
+
+        var upperCaseName = fullName.toUpperCase();
+
+        var nameLength = fullName.length;
+
+        var firstName = fullName.split(" ")[0];
+
+        document.write("<p>Full Name: " + fullName + "</p>");
+        document.write("<p>Uppercase: " + upperCaseName + "</p>");
+        document.write("<p>String Length: " + nameLength + "</p>");
+        document.write("<p>First Name: " + firstName + "</p>");
+
+        function checkStringLength() {
+            var userInput = prompt("Enter a string:");
+
+            if (userInput.length > 5) {
+                document.write("<p>The entered string is longer than 5 characters.</p>");
+            } else {
+                document.write("<p>The entered string is 5 or fewer characters.</p>");
+            }
+        }
+
+        checkStringLength();
+
+    </script>
+
+</body>
+</html>

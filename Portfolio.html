@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sourov Portfolio</title>
+<link rel="stylesheet" href="Portfolio.css">
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <h2 class="logo">Sourov</h2>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <button id="modeToggle">🌙</button>
+    </nav>
+</header>
+
+<main>
+
+<section id="home" class="home">
+    <h1>MD. Firoj Koraishi Sourov</h1>
+    <p id="typing"></p>
+</section>
+
+<section id="projects">
+    <h2>My Projects</h2>
+    <div class="project-container" id="projectContainer"></div>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+
+    <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name">
+        <small class="error" id="nameError"></small>
+
+        <input type="email" id="email" placeholder="Your Email">
+        <small class="error" id="emailError"></small>
+
+        <input type="text" id="subject" placeholder="Subject">
+        <small class="error" id="subjectError"></small>
+
+        <textarea id="message" placeholder="Message"></textarea>
+        <small class="error" id="messageError"></small>
+
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+</main>
+
+<footer>
+    <p>© 2026 Firoj Koraishi Sourov | All Rights Reserved</p>
+</footer>
+
+<button id="scrollTop">↑</button>
+
+<script src="Portfolio.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Info AJAX</title>
+    <style>
+        body {
+            font-family: Arial;
+            padding: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+        #output {
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Student Information</h2>
+
+<button onclick="loadStudents()">Load Students</button>
+
+<div id="output">
+    <!-- Data will appear here -->
+</div>
+
+<script>
+function loadStudents() {
+    var xhr = new XMLHttpRequest();
+
+    xhr.open("GET", "student.php", true);
+
+    xhr.onload = function () {
+        if (this.status == 200) {
+
+            // Convert JSON → JS Object
+            var students = JSON.parse(this.responseText);
+
+            var output = "";
+
+            // Loop through students
+            for (var i = 0; i < students.length; i++) {
+                output += "<h3>Student " + (i+1) + "</h3>";
+                output += "<p><b>Name:</b> " + students[i].name + "</p>";
+                output += "<p><b>ID:</b> " + students[i].id + "</p>";
+                output += "<p><b>Department:</b> " + students[i].department + "</p>";
+                output += "<p><b>CGPA:</b> " + students[i].cgpa + "</p>";
+                output += "<hr>";
+            }
+
+            document.getElementById("output").innerHTML = output;
+        }
+    };
+
+    xhr.send();
+}
+</script>
+
+</body>
+</html>
